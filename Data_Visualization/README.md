@@ -13,7 +13,7 @@ Project Status:  Completed
 -  T-tests
 -  Data visualization
 
-### Technologies
+### Technologies/Libraries
 -  Python
 -  Scipy 
 -  Seaborn
