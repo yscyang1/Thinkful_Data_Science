@@ -1,4 +1,4 @@
--- 1
+-- 1.  Write a query that allows you to inspect the schema of the naep table.
 SELECT
 	*
 FROM
@@ -6,7 +6,7 @@ FROM
 WHERE
 	TABLE_NAME = 'naep';
 
--- 2
+-- 2.  Write a query that returns the first 50 records of the naep table.
 SELECT 
 	* 
 FROM 
@@ -14,7 +14,7 @@ FROM
 LIMIT 50;
 
 
--- 3
+-- 3.  Write a query that returns summary statistics for avg_math_4_score by state. Make sure to sort the results alphabetically by state name.
 SELECT 
 	COUNT(state) as  count,
 	AVG(avg_math_4_score) AS average,
@@ -27,7 +27,7 @@ GROUP BY state
 ORDER BY state ASC;
 
 
--- 4
+-- 4.  Write a query that alters the previous query so that it returns only the summary statistics for avg_math_4_score by state with differences in max and min values that are greater than 30.
 WITH
 	stats
 AS (
@@ -51,7 +51,7 @@ WHERE
 	s.maxinum - s.minimum > 30;
 
 
--- 5
+-- 5.  Write a query that returns a field called bottom_10_states that lists the states in the bottom 10 for avg_math_4_score in the year 2000.
 SELECT
 	state as bottom_10_states
 FROM 
@@ -62,7 +62,7 @@ ORDER BY avg_math_4_score ASC
 LIMIT 10;
 
 
--- 6
+-- 6.  Write a query that calculates the average avg_math_4_score rounded to the nearest 2 decimal places over all states in the year 2000.
 SELECT
 	ROUND(AVG(avg_math_4_score),2)
 FROM 
@@ -71,7 +71,7 @@ WHERE
 	year = 2000;
 
 
--- 7
+-- 7.  Write a query that returns a field called below_average_states_y2000 that lists all states with an avg_math_4_score less than the average over all states in the year 2000.
 WITH 
 	stats
 AS (
@@ -91,7 +91,7 @@ WHERE
 	avg_math_4_score < avg_score;
 
 
--- 8
+-- 8.  Write a query that returns a field called scores_missing_y2000 that lists any states with missing values in the avg_math_4_score column of the naep data table for the year 2000.
 SELECT 
 	state as scores_missing_y2000
 FROM 
@@ -101,7 +101,7 @@ WHERE
 	year = 2000;
 
 
--- 9
+-- 9.  Write a query that returns for the year 2000 the state, avg_math_4_score, and total_expenditure from the naep table left outer joined with the finance table, using id as the key and ordered by total_expenditure greatest to least. Be sure to round avg_math_4_score to the nearest 2 decimal places, and then filter out NULL avg_math_4_scores in order to see any correlation more clearly.
 SELECT 
 	n.state, ROUND(n.avg_math_4_score,2) AS avg_math_4_score, f.total_expenditure
 FROM
