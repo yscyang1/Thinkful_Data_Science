@@ -1,11 +1,41 @@
 # Citi Bike Share Analytics Report 
-This capstone project is my first project during in the Thinkful Data Science Bootcamp curriculum.  The purpose of this project is to ask and answer analytical questions on a dataset of our choosing.  In this case, I chose to analyze Citi Bike's dataset in New York City. In the interest of helping Citi Bike (and potentially othe bike share programs) increase revenue, I explored two parts of the data:  
+This capstone project is my first project during in the Thinkful Data Science Bootcamp curriculum.  The purpose of this project is to ask and answer analytical questions on a dataset of our choosing.  In this case, I chose to analyze Citi Bike's dataset in New York City for the years 2017 - 2018. In the interest of helping Citi Bike (and potentially othe bike share programs) increase revenue, I explored two parts of the data:  
 1.  **Time**
     1.  What time of year has more riders?
     2.  When is the most popular time to rent a bike?
 2.  **Location**
     1.  Can we identify hotspots?
     2.  Can we prevent bikes from being stolen?
+
+The data provided is as follows:
+
+| Variable | Explanation   |
+|------|------|
+|   Trip Duration  | Length of the bike ride in seconds |
+|   Starting and ending times and date  | Year:Month:Day  Hour:Minute:Second |
+|   Start and end station names and coordinates  | Station name, station ID, latitudes and longitudes |
+|   Bike ID  | |
+|   Year of birth  | |
+|   Gender  | 0 = Unknown, 1 = Male, 2 = Female |
+|   User Type  |  Customer = 1 or 3 day pass, Subscriber = annual pass|
+
+## 1 - Time
+There are several ways to look at trends in time.  In this case, I will look at what part of the year there are more bike rides and what time of day is the most popular to rent a bike.  
+
+### 1.1 - What Time of Year has More Riders?
+There are two types of users which I will call subscribers and customers.  Subscribers are those who buy a yearly/annual pass whereas customers are those that buy a 1 or 3 day pass.  It is important to examine these two populations separately because I suspect the company can generate the most money by drawing in more customers.  Thus, I looked at the number of rides per month for 2017 and 2018 separated by user type, plotted below.  
+
+<img src="images/monthly_ride_frequency.png" width = "800">
+
+From 2017-18, the average number of rides per month for annual subscribers increased by ~10% whereas for day pass customers, the number of rides per month increased by 520%.  This shows that growth from annual subscribers is stagnating whereas there is room for growth to draw in day pass customers.  With focused advertising, especially before the warm summer months, it might be possible to increase the number of day pass riders for several years.  
+
+### 1.2 - When is the Most Popular Time to Rent a Bike?
+There are two ways I interpreted 'most popular time'.  The first way is to look at what day of the week has the most bikes rented out, and the second is to look at what is the most popular hour of the day.  
+
+Looking at the most popular day(s) of the week, I was suprirsed to see that the majority of rides came from the weekdays, specifically with a peak on Wednesday.  A breakdown of the number of rides based on user type is plotted below.  It seems that the 
+
+<img src="images/weekly_ride_frequency.png" width = "400">
+
 
 Project Status:  Completed
 
