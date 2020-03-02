@@ -27,14 +27,23 @@ There are two types of users which I will call subscribers and customers.  Subsc
 
 <img src="images/monthly_ride_frequency.png" width = "800">
 
-From 2017-18, the average number of rides per month for annual subscribers increased by ~10% whereas for day pass customers, the number of rides per month increased by 520%.  This shows that growth from annual subscribers is stagnating whereas there is room for growth to draw in day pass customers.  With focused advertising, especially before the warm summer months, it might be possible to increase the number of day pass riders for several years.  
+From 2017-18, the average number of rides per month for annual subscribers increased by ~10% whereas for day pass customers, the number of rides per month increased by 520%.  This shows that growth from annual subscribers is stagnating whereas there is room for growth to draw in day pass customers.  **With focused advertising, especially before the warm summer months, it might be possible to increase the number of day pass riders for several years.**  
 
 ### 1.2 - When is the Most Popular Time to Rent a Bike?
 There are two ways I interpreted 'most popular time'.  The first way is to look at what day of the week has the most bikes rented out, and the second is to look at what is the most popular hour of the day.  
 
-Looking at the most popular day(s) of the week, I was suprirsed to see that the majority of rides came from the weekdays, specifically with a peak on Wednesday.  A breakdown of the number of rides based on user type is plotted below.  It seems that the 
+Looking at the most popular day(s) of the week, I was suprirsed to see that the majority of rides came from the weekdays, specifically with a peak on Wednesday.  A breakdown of the number of rides based on user type is plotted below.  It seems that those with an annual membership ride the most during the weekday, with the average number of subscribers decreasing by ~30% on weekends.  The average number of day pass customers however increased by 100% on the weekends compared to the weekdays.  **This leads me to believe that annual subscribers are NYC locals and day pass customers are tourists.**  
 
 <img src="images/weekly_ride_frequency.png" width = "400">
+
+To confirm that annual subscribers are locals and day pass customers are tourists, I looked at the patterns of renting bikes by time of day, shown below. On the weekdays, there are two distint patterns.  **The annual subscribers rent bikes mainly in two parts of the day, at around 8am and 5pm.  The customers however have one peak, where the number of bike rentals slowly increase starting at around 10am and peaks at 3pm before dropping off steadily.  During the weekends, both annual subscribers and annual customers have similar bike rental patterns.**  For now, I think it is safe to say that annual subscribers are NYC locals and day pass customers are NYC tourists. 
+
+<img src="images/start_times.png" width = "800">
+
+## 2 - Location
+
+
+
 
 
 Project Status:  Completed
