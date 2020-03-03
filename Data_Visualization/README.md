@@ -57,4 +57,12 @@ Now that we have seen where the docking stations are located, where are the most
 ### 2.2 - Can we Prevent Bikes from Being Stolen?
 Lastly, I wanted to see if we could use the data to identify where bikes are being stolen from.  The first step was to identify which bikes were stolen.  In this case, I'm assuming bikes that are out for 8 hours or more are stolen.  This is because sometimes, the rider doesn't dock the bike correctly so it will register as being rented out.  Just in case the rider comes back to re-dock the bike, I've given an 8 hour buffer window.  
 
-For both 
+For both annual subscribers and day pass customers, 10% of the stolen bikes ended up at 3 common stations: NYCBS Depot Gow, NYCBS Depot Delancey, and Fulton St and Utica Ave.  The bikes that ended up at NYCBS Depots in particular travelled quite far, often crossing the East River before ending up its ending station.  
+
+<img src="images/suspicious_stations.png" width = "800">
+
+Of course, there are many assumptions that went into identifying these stolen bikes.  The most glaring assumption is that these bikes were actually returned to a docking station; I'm sure the majority of stolen bikes are never recovered at all!  Ideally, the best way to identify if a bike was stolen or not was to check the bike's odometer, if it even has one.  
+
+## 3 - Furthur Research
+An interesting problem would be to track the flix of bikes in and out of stations so that the company can move bikes around to prevent stations from becoming empty or over crowded.  This involves 1) figuring out tracking number of bikes by station based on time of year/week, seasons, and special events, and 2) figuring out when to actaully move the bikes.  Does this mean moving the bikes during or around rush hour traffic?  What to routes should the driver take?  
+
