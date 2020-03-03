@@ -41,19 +41,20 @@ To confirm that annual subscribers are locals and day pass customers are tourist
 <img src="images/start_times.png" width = "800">
 
 ## 2 - Location
+Using location data can help Citi Bike create a plan to reach a broader audience as well as keep operations running smoothly.  
 
+### 2.1 - Can we Identify Hotspots?
+The first way to use location data is to try and identify hotspots.  By hotspots, I mean places that Citi Bike riders tend to cluster around.  Before I start locating hotspots, I want to see where the docking stations are located.  To do so, I made a scatterplot of the coordinates for each station, seen below.  
 
+<img src="images/map.png" width = "400">
 
+What's amazing is that the number of docking stations is so dense, we are able to see geographic features of NYC through the scatterplot.  For example, we can see the East River flowing through the middle, Central Park is a blank spot near the top, and the edges above Central Park is the Hudson River that separates New York and New Jersey.  The docking stations doesn't encompass all of NYC, as south of the East River, only parts of Brooklyn is populated with stations.  
 
+Now that we have seen where the docking stations are located, where are the most frequently visited stations?  Below are the most frequently visited stations based on user type.  **The day pass customers tended to rent bikes around Central park and the western waterfront, which are very touristy areas.  On the other hand, annual subscribers were centered around midtown Manhattan, where I'm sure is where the locals live and work.  The other thing to notice is that the stations below the East river aren't as popular.  Is there a way to increase the number of rides in these areas?**  
 
-Project Status:  Completed
+<img src="images/hotspots.png" width = "400">
 
-### Methods Explored
--  T-tests
--  Data visualization
+### 2.2 - Can we Prevent Bikes from Being Stolen?
+Lastly, I wanted to see if we could use the data to identify where bikes are being stolen from.  The first step was to identify which bikes were stolen.  In this case, I'm assuming bikes that are out for 8 hours or more are stolen.  This is because sometimes, the rider doesn't dock the bike correctly so it will register as being rented out.  Just in case the rider comes back to re-dock the bike, I've given an 8 hour buffer window.  
 
-### Technologies/Libraries
--  Python
--  Scipy 
--  Seaborn
--  Matplotlib
+For both 
